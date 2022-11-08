@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ICONS */
+#check-icon{
+    display: none;
+}
+
+#times-icon{
+    font-size: larger;
+    padding: 10px;
+}
+#times-icon:hover{
+    cursor: pointer;
+}
+#times-icon:active{
+    transform: scale(0.9);
+}
+
+#edit-add-icon{
+    font-size: larger;
+    padding: 10px;
+}
+/* ICONS */
+
+/* Jotting Header */
+
+header{
+    background-color: rgb(50, 139, 156);
+    border-radius: 3px;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    margin-left: 10%;
+    margin-bottom: 15px;
+}
+
+#new-item{
+    height: 40px;
+    min-width: 90%;
+    border-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: #ededed;
+    border-right: none;
+    padding: 5px;
+}
+
+#new-item:focus{
+    outline: none;
+}
+
+#add-icon{
+    float: right;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    background-color: #344356;
+    padding: 4px;
+    border: 1px solid rgb(2, 2, 2);
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+#add-icon:hover{
+    cursor: pointer;
+}
+
+#add-icon:active{
+    font-size: 26px;
+    padding: 6px;
+}
+
+.input-items{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+/* Jotting Header */
+
+
+
+
+
+
+.Jotting{
+    width: 60%;
+    margin-top: 30px;
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+}
+
+.item{
+    display: flex;
+    margin-bottom: 1px;
+}
+.item-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: rgb(85, 121, 122);
+    font-size: 1.6rem;
+    width: 20%;
+}
+
+.item-desc{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(176, 174, 174, 0.813);
+    font-size: 1.3rem;
+}
+
+.item-desc > p{
+    margin: 0 5px;
+}
+
+.edit-input{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(121, 112, 78);
+    font-size: 1.3rem;
+}
+
+
+
+.edit-input input[type='text']{
+    height: 100%;
+    border: none;
+    background-color: #fff9f9;
+    font-size: 1.3rem;
+    padding: 5px 0 5px 10px;
+    width: 90%;
+}
+
+.edit-input input[type='text']:focus{
+    outline-width: 1px;
+    outline-color: rgb(0, 0, 0);
+}
